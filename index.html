@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <center>
+    <h1> video controler</h1>
+
+    <video  src="video/apj.mp4" autoplay controls height="300px" width="500px" id="video">
+</video>
+<br>
+<button type="button"  onclick="play()">play</button>
+<button type="button"  onclick="pause()">pause</button>
+<br>
+<br>
+<h1>audio controler</h1>
+<audio src="song.mp3" autoplay controls id="audio" >
+</audio><br>
+<button type="button"  onclick="song()">play</button>
+<button type="button"  onclick="stop()">pause</button>
+<br>
+
+
+</center>
+</body>
+<script type="text/javascript">
+function play(){
+  var simbu=document.getElementById('video');
+  simbu.play();
+}
+function pause(){
+  var simbu=document.getElementById('video');
+  simbu.pause();
+}
+
+
+</script>
+<script type="text/javascript">
+function song(){
+  var ab=document.getElementById('audio');
+  ab.play();
+}
+function stop(){
+  var ab=document.getElementById('audio');
+  ab.pause();
+}
+
+
+</script>
+</html>
